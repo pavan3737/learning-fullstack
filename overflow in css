@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overflow</title>
+    <style>
+        .box {
+            width: 30vw;
+            height: 30vh;
+            border: 2px solid black;
+            /* overflow: auto;
+            overflow-x: hidden;
+            overflow-y: scroll; */
+            overflow: auto hidden;
+            /* white-space: nowrap;
+            text-overflow: ellipsis; */
+        }
+    </style>
+</head>
+
+<body>
+ /* 
+    when the amount data in abox is more than 
+    its space then iy is called as oveerflow and by using
+    overflow techniques we can reduce it that is we can get  some 
+    scroll bars horizontally and vertically
+    *by using overflow scroll we can get a scroll bar vertically
+    *by using overflow auto we can getscroll bar when there is an overflow
+    * by using white space norap we get horizontal scroll bar and
+    all the data is managed horizontally
+    *by using ellipsis we can get dots at end
+    when there is oveerflow
+    *x nad y represents horizontal and vertical we cand use properties individually */
+    
+
+
+
+    <div class="box">
+        I am a good boy and I love to write Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta iure amet
+        unde voluptas nihil vero, maxime esse quis quos natus rem, earum aspernatur quasi aut ea commodi nostrum
+        voluptate! Sint rerum nostrum perferendis sapiente explicabo perspiciatis, ut magni? Aspernatur, provident
+        dolorum unde corporis doloribus rem!
+    </div>
+</body>
+
+</html>
