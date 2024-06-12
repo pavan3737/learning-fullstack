@@ -1,0 +1,70 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS media query</title>
+    <style>
+        body {
+            background-color: red;
+        }
+
+        @media screen and (orientation: portrait) {
+            body{
+                border: 2px solid purple;
+            }
+        }
+
+        @media only screen and (max-width: 455px){
+            body{
+
+                background-color: blue;
+            }
+            
+            .boxes{
+                flex-direction: column;
+            }
+        }
+        
+        /* @media not|only mediatype and (expressions) {
+            CSS-Code;
+        } */
+
+        .boxes{
+            display: flex;
+        }
+
+        .box{
+            width: 344px;
+            height: 344px;
+            background-color: steelblue;
+            padding: 3px;
+            margin: 3px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <p>
+        *media query is mainly used for when we are accesing the website
+        in a device or accessing the interface in new device then depending upon the 
+        device and its settings the interface changes for that purpose we use media query 
+        *ex:it is like when the max width of the screen is 455 pixels
+        then the color should be blue else it should be another color
+        
+        </p>
+    <div>
+        Hey I am a red body guy!
+    </div>
+
+    <div class="boxes">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+</body>
+
+</html>
