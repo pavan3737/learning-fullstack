@@ -1,0 +1,104 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Flexbox</title>
+    <style>
+        .container {
+            border: 2px solid red;
+            display: flex;
+            height: 80vh;
+            /* justify-content: center; */
+            align-items: center;
+            /* flex-direction: column; */
+            flex-wrap: wrap;
+            /* align-content: flex-start; */
+            /* there is no justify-items  in flexbox; */
+            flex-flow: row wrap;
+            /* gap: 30px; 
+            row-gap: 40px;
+            column-gap: 10px; */
+            gap: 40px 10px;
+
+        }
+
+        .item {  
+            /* flex-grow: 1; */
+            height: 92px;
+            width: 92px;
+            border: 2px solid black;
+            /* margin: 4px; */
+            background-color: blueviolet;
+        }
+
+        .order-1{
+            order: 1;
+        }
+        .order-2{
+            order: 2;
+        }
+        .order-3{
+            order: 3;
+        }
+
+        .item1{  
+            /* flex-grow: 2; */
+            /* flex-shrink: 2; */
+            align-self: flex-end;
+        }
+    </style>
+</head>
+
+<body>
+    <p>
+        *prevously the usage positioning and float,clear become some hard to use 
+        that why flex box is introduced in css3
+        *intially inorder to use flex box we need to give display flex so that 
+        we can flex box porperties and default properties are applied on it
+        and by dafault the items becomes left to right.
+        *by using justify-content:center then content becomes center horixontally
+        and by using align-items:center the content becomes center vertically
+        *there are some many properties inside it(justify and align) they 
+         flexend,flet start,space between etc.
+         *the items are not always left to right it depends upon flex direction
+         by default it is from left to right.
+         *flex direction: it is that where the items are being laid by default the items are laid left to right
+          we can change it top bottom ,column,column reverse
+        *the flex direction is called main axis and cross axis is perpendicular to it
+        and  the distance is called main size and cross size
+        *  flex wrap helps to make content come to new line and there is also wrap reverse
+        *there is no justify iems in flex box
+        * by using gap property we can define space between items.in gap we have row,column gap types
+           (gap 10px 40px)-says gap between row and column
+        *order helps to set position of elemnts depending upon its values.default order is zero
+        *flex sets the width of the items by default it is 0 if we set flex grow equal to 2 the that item will
+        take 2 items space compared to other items                                                                                                                                                                                justify content center depends upon main axis
+        *flex shrink is the ability of the item to shirnk
+        *align self helps to set alignment of a particular element
+        
+        </p>
+
+    <main>
+        <div class="container">
+            <div class="item item1">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item order-1">4</div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+
+
+        </div>
+    </main>
+
+</body>
+
+</html>
