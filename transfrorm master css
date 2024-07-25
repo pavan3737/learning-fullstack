@@ -1,0 +1,54 @@
+
+        <!DOCTYPE html>
+        <html lang="en">
+        
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Css Transform</title>
+            <style>
+                * {
+                    margin: 0;
+                    padding: 0;
+                }
+        
+                .box {
+                    height: 50px;
+                    width: 50px;
+                    background-color: beige;
+                    border: 2px solid black;
+                    transform: rotate(0.125turn);
+                    transform-origin: -50% -50%;
+                    /* transform: rotateZ(9deg); */
+                    /* transform: skewY(34deg); */
+                    /* transform: translateY(100%) skewX(40deg) translateX(45%); */
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+        
+                .container {
+                    margin: 55px;
+                    width: 100vw;
+                    height: 80vh;
+                    border: 2px solid purple;
+                }
+            </style>
+        </head>
+        
+        <body>
+            *in css there are 2 types of transforms 
+        one 2d transform and other is 3d transform
+        *in transform we have different properties like :
+        -rotate(in these we can use angle or we can mention turn(.25 turn means 90 degree))
+        we can mention rotatex,y,z, it is with respective axis
+        -scale-like rotate properties we can apply to scale properties          
+        -skew
+            <div class="container">
+                <div class="box">
+                    box
+                </div>
+            </div>
+        </body>
+        
+        </html>
